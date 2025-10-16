@@ -1,0 +1,65 @@
+-> Version Control System (VCS)
+  - A Version Control System is a tool that tracks and manages changes to source code over time.
+  - It helps developers maintain a history of changes, collaborate efficiently, and prevent data loss.
+  - It allows developers to:
+    * Record and track every revision made to files
+    * Compare versions to identify changes
+    * Revert back to previous versions when needed
+    * Work simultaneously with others on the same project
+
+  - Popular Version Control Systems:
+    * Git                     → Distributed, open-source, and most widely used (used by GitHub, GitLab, Bitbucket)
+    * Apache Subversion (SVN) → Centralized version control system
+    * Piper                   → Google’s internal version control system
+
+-> Git
+  - Git is a distributed version control system (DVCS) used to manage and track changes in source code.
+  - Each developer has a complete copy of the repository (including full history).
+  - Key Features:
+    * Tracks changes both locally and remotely
+    * Allows branching and merging to support multiple development versions
+    * Enables safe and fast collaboration among multiple developers
+    * Supports offline work full repository history is available locally
+
+-> Initializing a Git Project
+  - Git allows you to either create a new local repository or clone an existing remote repository.
+  - Local repository  : Tracks and stores changes on your local machine.
+  - Remote repository : Hosted on platforms like GitHub, GitLab, or Bitbucket for sharing and collaboration.
+  - Example:
+    * git init             → Initializes a new local Git repository.
+    * git clone <repo_url> → Copies an existing repository from a remote server.
+
+-> Staging & Commits
+  - Staging Area : A temporary zone where modified files are collected before committing.
+  - Commit       : A permanent snapshot of the project’s current state stored in the repository.
+  - This allows incremental saving of work with clear version history.
+  - Best Practice:
+    * Write clear, descriptive commit messages.
+    * Example:
+      ✅ Good: "Add login form validation"
+      ❌ Bad: "Updated code"
+
+  - Each commit is identified by a unique commit hash (SHA-1).
+
+-> Logging Commit History
+  - Git maintains a full record of commits, allowing you to review the project’s evolution.
+  - Logs can display:
+    * who made changes
+    * when changes were made
+    * what files were modified
+
+  - Visualization options:
+    * git log                              → Detailed list of commits
+    * git log --oneline                    → Compact view
+    * git log --graph --oneline --decorate → Visual branch structure for easy understanding
+
+-> Reverting Commits
+  - Git provides ways to undo or backtrack changes safely.
+  - Common Approaches:
+    * git revert <commit_id> → Creates a new commit that undoes a specific change (safe and recommended)
+    * git reset <commit_id>  → Moves the HEAD pointer to a previous commit
+      --soft  : Keeps changes staged
+      --mixed : Keeps changes unstaged
+      --hard  : Discards all changes (use with caution)
+
+  - Use these commands to fix mistakes or restore older project states without losing valuable work.

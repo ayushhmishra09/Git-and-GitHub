@@ -1,0 +1,52 @@
+-> Git Configuration
+  | Command                                  | Description                                   |
+  | ---------------------------------------- | --------------------------------------------- |
+  | git config --global user.name "[name]"   | Sets your Git username (used in commits)      |
+  | git config --global user.email "[email]" | Sets your Git email address                   |
+  | git config --global color.ui auto        | Enables colored output in terminal            |
+  | git config --list                        | Displays all current Git configuration values |
+
+-> Project Initialization
+  | Command              | Description                                      |
+  | -------------------- | ------------------------------------------------ |
+  | git init             | Initializes a new local Git repository in folder |
+  | git clone <repo_url> | Copies (clones) a remote repository locally      |
+
+-> Adding & Staging
+  | Command            | Description                                         |
+  | ------------------ | --------------------------------------------------- |
+  | git add <filename> | Adds specific file(s) to the staging area           |
+  | git add .          | Adds all modified and new files to staging          |
+  | git status         | Displays current state of working directory & stage |
+
+-> Removing Files
+  | Command                    | Description                                           |
+  | -------------------------- | ----------------------------------------------------- |
+  | git rm <filename>          | Deletes file and stages the deletion for commit       |
+  | git rm --cached <filename> | Untracks file (keeps it locally but removes from Git) |
+
+-> Commits
+  | Command                  | Description                                            |
+  | ------------------------ | ------------------------------------------------------ |
+  | git commit -m "message"  | Saves staged changes with a descriptive message        |
+  | git commit -am "message" | Adds & commits tracked files directly (skips staging)  |
+
+-> Viewing Commit History (Logs)
+  | Command                              | Description                                   |
+  | ------------------------------------ | --------------------------------------------- |
+  | git log                              | Shows detailed commit history (author, date)  |
+  | git log --oneline                    | Simplified commit list (short hash + message) |
+  | git log --graph --oneline --decorate | Displays visual branch structure with commits |
+
+-> Reverting & Resetting
+  | Command                       | Description                                                    |
+  | ----------------------------- | -------------------------------------------------------------- |
+  | git revert <commit_id>        | Creates a new commit that safely undoes the specified commit   |
+  | git revert HEAD               | Reverts the latest commit                                      |
+  | git reset --soft <commit_id>  | Moves HEAD to commit but keeps changes staged                  |
+  | git reset --mixed <commit_id> | Moves HEAD to commit and unstages changes (default behavior)   |
+  | git reset --hard <commit_id>  | Moves HEAD and deletes all changes permanently (use with care) |
+
+-> Tip:
+  - Always check git status before committing or resetting.
+  - Use git log --oneline to quickly view history before making changes.
