@@ -1,0 +1,14 @@
+-> Remote & Synchronization Commands
+  | Command                          | Description                                                                                 |
+  | -------------------------------- | ------------------------------------------------------------------------------------------- |
+  | git remote add origin <repo_url> | Links your local repository to a remote server (commonly named 'origin').                   |
+  | git remote -v                    | Displays all remote connections and their corresponding fetch/push URLs.                    |
+  | git push origin <branch>         | Uploads (pushes) your local commits from the specified branch to the remote repository.     |
+  | git pull origin <branch>         | Fetches and merges the latest changes from the remote branch into your current branch.      |
+  | git fetch                        | Downloads new commits and updates from the remote without merging them automatically.       |
+  | git remote remove <name>         | Deletes the specified remote connection from your local repository configuration.           |
+
+-> Tips:
+  - Always run git remote -v after adding a new remote to confirm the connection.
+  - Use git fetch + git merge instead of git pull if you want more control over merging.
+  - The default remote name is usually origin, and the default branch is often main.

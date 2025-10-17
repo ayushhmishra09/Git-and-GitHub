@@ -1,0 +1,31 @@
+-> Git and Git Server
+  - Git is a distributed version control system (DVCS) that tracks changes, manages versions, and maintains a project’s full history locally on each developer’s computer.
+  - Every developer has their own complete copy of the repository, including all branches and commit history.
+  - This allows developers to work offline, make commits independently, and merge their work later.
+  
+  - A Git Server is a remote system or service that hosts Git repositories, enabling developers to:
+    * Share their work with teammates
+    * Collaborate on the same codebase from different locations
+    * Backup and secure project data in the cloud
+    * Review and manage code using web interfaces (e.g., pull requests, issues, merge reviews)
+
+  - The Git server communicates with local machines through:
+    * HTTPS        → Common and secure for most users
+    * SSH          → More secure; uses keys for authentication
+    * Git Protocol → Fast, used mainly for internal networks
+
+-> Popular Git Servers
+  - GitHub    : The most widely used platform for hosting open-source and private repositories. Offers features like pull requests, issues, and Actions for CI/CD.
+  - GitLab    : An open-source platform supporting repository management, CI/CD pipelines, and DevOps tools in one system.
+  - Bitbucket : Developed by Atlassian; integrates well with Jira and focuses on team collaboration and project tracking.
+
+-> Git Remotes
+  - A remote in Git is a shortcut name or reference to a repository hosted on a remote server (e.g., GitHub, GitLab).
+  - It connects your local repository with the remote one so you can push, pull, and fetch code.
+  - Common commands:
+    * git remote add origin <repo_url> → Connects local repo to remote
+    * git remote -v                    → Lists all remote connections
+    * git push origin main             → Uploads commits to the remote branch
+    * git pull origin main             → Downloads and merges updates from remote
+
+  - Developers typically name the main remote as origin, but you can have multiple remotes for different servers or collaborators.
