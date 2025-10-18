@@ -1,0 +1,68 @@
+-> What is a Version Control System (VCS)? 
+  - A version control system is a tool that helps to track and manage changes made to files over time.
+  - It helps multiple developers collaborate efficiently by maintaining a complete history of modifications, allowing rollbacks, comparisons, and simultaneous work on different features.
+  - Example:
+    * Developers can use VCS to revert to a stable version if a new code change introduces
+
+  - Popular Tools:
+    * Git (distributed)
+    * SVN (centralized)
+    * Piper (Google's internal system)  
+
+
+-> What is Git, and why is it so popular?
+  - Git is Distributed Version Control System that allows every developer to have a full copy of the repository, including its history.
+  - Reasons for popularity:
+    * Works both online and offline
+    * Fast and lightweight
+    * Powerful branching and merging
+    * Supported by major platforms like GitHub, GitLab and Bitbucket
+
+
+-> What is the difference between a local and a remote repository in Git?
+  - Local Repository  : Exists on your machine; tracks and stores your changes.
+  - Remote Repository : Hosted on platforms like GitHub or GitLab for sharing and collaboration.
+
+
+-> How do you initialize a Git repository?
+  - Initializing a Git repository is the first step in using Git to track a project’s version history. 
+  - You can either create a new repository locally or clone an existing repository from a remote server.
+
+
+-> What is the Staging Area in Git?
+  - The Staging Area (or Index) is an intermediate zone where changes are collected before being committed.
+  - It allows you to review and organize your work before creating a permanent snapshot.    
+
+
+-> What is a Git Commit?
+  - A commit is a snapshot of the project at a specific point in time.
+  - Each commit has a unique SHA-1 hash, an author, timestamp, and message describing the change.  
+  - Best Practice:
+    * ✅ Good : "Fix user authentication bug"
+    * ❌ Bad  : "Updated code"
+
+
+-> What is the difference between git revert and git reset?
+  | Command                | Purpose                                            | Safety                   |
+  | ---------------------- | -------------------------------------------------- | ------------------------ |
+  | git revert <commit_id> | Creates a new commit that undoes a specific change | Safe (preserves history) |
+  | git reset <commit_id>  | Moves the HEAD pointer to a previous commit        | Risky (can discard work) |
+
+
+-> What is a Git Remote?
+  - A Git Remote is a reference (shortcut name) to a repository hosted on a remote server.
+  - Purpose: 
+    * Allows you to connect, push, and pull between local and remote repositories.    
+
+
+-> What are the different ways Git can communicate with a remote server?
+  - HTTPS        : Common and secure
+  - SSH          : More secure; uses encryption keys
+  - Git Protocol : Fastest, used in internal networks 
+
+
+-> What is GitHub, and how is it different from Git?
+  - Git    : A distributed version control tool for tracking changes in code.
+  - GitHub : A cloud-based hosting platform for Git repositories that adds collaboration features like pull requests, issues, and CI/CD.
+  - Analogy:
+    * Git is the engine; GitHub is the car showroom where people collaborate and share. 
